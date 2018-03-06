@@ -3,18 +3,19 @@ var add = document.getElementById('addElem');
 
 add.addEventListener('click', function() {
 	var element = document.createElement('li');
+	
+	element.innerHTML = 'item';
+
+	var itemsByTagName = document.getElementsByTagName('li');
+	console.log(itemsByTagName);
+
 	list.appendChild(element);
 
 	var element = document.createElement('li');
-
-	element.innerHTML = 'item';
-
 	console.log(element);
-
 });
-var itemsByTagName = document.getElementsByTagName('li');
 
-	console.log(itemsByTagName);
+
 
 
 
